@@ -49,7 +49,7 @@
 			<div class="container-fluid">
 
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
+					<li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
 
 
 					<li>
@@ -59,17 +59,17 @@
 							<span class="caret"></span>
 						</a>
 						<ul class="dropdown-menu">
-							<li><a href="#">@Html.ActionLink("Action", "ASPQuiz", "Quiz")</a></li>
-							<li><a href="#">@Html.ActionLink("RPG", "CSharpQuiz", "Quiz")</a></li>
-							<li><a href="#">@Html.ActionLink("Strategy", "JavaQuiz", "Quiz")</a></li>
+							<li>@Html.ActionLink("Action", "Index", "Books")</li>
+							<li>@Html.ActionLink("RPG", "Index", "Books")</li>
+							<li>@Html.ActionLink("Strategy", "Index", "Books")</li>
 						</ul>
 
 					</li>
 					<li>@Html.ActionLink("About Us", "Index", "About")</li>
 					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
-					<li>@Html.ActionLink("Quizes", "Index", "Quiz")</li>
-					<li>@Html.ActionLink("Sign In", "Index", "Quiz")</li>
-					<li>@Html.ActionLink("Register", "Index", "Quiz")</li>
+					<li>@Html.ActionLink("Quizes", "Index", "SignIn")</li>
+					<li>@Html.ActionLink("Sign In", "Index", "SignIn")</li>
+					<li>@Html.ActionLink("Register", "Index", "SignIn")</li>
 				</ul>
 
 				
@@ -111,6 +111,7 @@
 			</a>
 		</div>
         <main>
+
 			<div class="row">
 				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
 				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>

@@ -106,7 +106,7 @@
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
     <Content Include="Views\Courses\Index.cshtml" />
-    <Content Include="Views\Quiz\Index.cshtml" />
+    <Content Include="Views\SignIn\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -115,7 +115,7 @@
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\QuizController.cs" />
+    <Compile Include="Controllers\SignInController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

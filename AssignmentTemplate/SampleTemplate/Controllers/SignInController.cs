@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SampleTemplate.Controllers
 {
-    public class QuizController : Controller
+    public class SignInController : Controller
     {
         // GET: Quiz
         public ActionResult Index()
