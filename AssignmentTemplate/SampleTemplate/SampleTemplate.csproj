@@ -105,7 +105,7 @@
     <Content Include="Views\About\Index.cshtml" />
     <Content Include="Views\Contact\Index.cshtml" />
     <Content Include="Views\Books\Index.cshtml" />
-    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Register\Index.cshtml" />
     <Content Include="Views\SignIn\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
@@ -113,7 +113,7 @@
     <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
-    <Compile Include="Controllers\CoursesController.cs" />
+    <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\SignInController.cs" />
     <Compile Include="Global.asax.cs">

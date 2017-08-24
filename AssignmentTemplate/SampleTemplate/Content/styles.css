@@ -18,9 +18,6 @@ header{
     color:orangered;
 }
 
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-	background-color: #8064A2 !important;
-}
 
 .right{
     float:right;
@@ -39,6 +36,7 @@ main{
     min-height:500px;
     height:auto;
 }
+
 footer{
     text-align:center;
     

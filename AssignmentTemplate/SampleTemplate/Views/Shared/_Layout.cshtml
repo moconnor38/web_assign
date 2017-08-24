@@ -16,35 +16,7 @@
             <img alt="logo" src="~/Content/Images/logo.gif" class="right" />
             <h2><em>Force Gaming</em></h2>
         </header>
-		@*<div id="navbar">
-			<nav>
-				<ul>
-					<li class="active">
-						@Html.ActionLink("Home", "Index", "Home")
-					</li>
-					<li>
-						@Html.ActionLink("Books", "Index", "Books")
-					</li>
-					<li>
-						@Html.ActionLink("Courses", "Index", "Courses")
-					</li>
-					<li>
-						@Html.ActionLink("Quizes", "Index", "Quiz")
-						<ul>
-							<li>@Html.ActionLink("ASP.NET Quiz", "ASPQuiz", "Quiz")</li>
-							<li>@Html.ActionLink("C# Quiz", "CSharpQuiz", "Quiz")</li>
-							<li>@Html.ActionLink("Java Quiz", "JavaQuiz", "Quiz")</li>
-						</ul>
-					</li>
-					<li>
-						@Html.ActionLink("About Us", "Index", "About")
-					</li>
-					<li>
-						@Html.ActionLink("Contact Us", "Index", "Contact")
-					</li>
-				</ul>
-			</nav>
-		</div>*@
+
 		<nav class="navbar navbar-default -dark bg-dark" >
 			<div class="container-fluid">
 
@@ -68,7 +40,7 @@
 					<li>@Html.ActionLink("About Us", "Index", "About")</li>
 					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
 					<li>@Html.ActionLink("Sign In", "Index", "SignIn")</li>
-					<li>@Html.ActionLink("Register", "Index", "SignIn")</li>
+					<li>@Html.ActionLink("Register", "Index", "Register")</li>
 				</ul>
 
 				
@@ -78,7 +50,7 @@
 				</form>
 			</div>
 		</nav>
-		<h2>Now Available to play</h2>
+		<h2>New Releases Available to Play</h2>
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -109,14 +81,17 @@
 				<span class="sr-only">Next</span>
 			</a>
 		</div>
+	
+		<div class="row">
+			<p>Featured Games</p>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+		</div>
         <main>
 
-			<div class="row">
-				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-				<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-			</div>
+
             @RenderBody()
         </main>
         <footer>

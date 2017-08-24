@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace SampleTemplate.Controllers
 {
-    public class CoursesController : Controller
+    public class RegisterController : Controller
     {
         // GET: Courses
         public ActionResult Index()
