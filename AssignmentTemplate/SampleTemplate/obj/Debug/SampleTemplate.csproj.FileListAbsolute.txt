@@ -1,0 +1,146 @@
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\csc.exe
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\csc.exe.config
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\csc.rsp
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\csi.exe
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\csi.rsp
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CSharp.Core.targets
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.AppContext.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.Collections.Immutable.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.Diagnostics.StackTrace.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\System.Reflection.Metadata.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\vbc.exe
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\vbc.exe.config
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\vbc.rsp
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe.config
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\SampleTemplate.dll.config
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\SampleTemplate.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\SampleTemplate.pdb
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\Microsoft.Web.Infrastructure.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Helpers.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Mvc.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Razor.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Razor.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Helpers.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\bin\System.Web.Mvc.xml
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
+\\DBS-FS.student.dbs.ie\CTX.XA.Profiles.Data\88306\Downloads\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\.access^
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\.attribute^
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\csc.exe
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\csc.exe.config
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\csc.rsp
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\csi.exe
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\csi.rsp
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.AppContext.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.Collections.Immutable.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.Diagnostics.StackTrace.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\System.Reflection.Metadata.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\vbc.exe
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\vbc.exe.config
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\vbc.rsp
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe.config
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\SampleTemplate.dll.config
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\SampleTemplate.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\SampleTemplate.pdb
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\Microsoft.Web.Infrastructure.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Helpers.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Mvc.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Razor.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Razor.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Helpers.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\bin\System.Web.Mvc.xml
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.csproj.CoreCompileInputs.cache
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
+F:\Downloads (Chrome)\SampleTemplate\SampleTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\.attribute^
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe.config
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.rsp
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\csi.exe
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\csi.rsp
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.AppContext.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\vbc.exe
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\vbc.exe.config
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\vbc.rsp
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\SampleTemplate.dll.config
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\SampleTemplate.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\SampleTemplate.pdb
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Helpers.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Mvc.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Razor.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Razor.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.Deployment.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Webpages.Razor.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Helpers.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\bin\System.Web.Mvc.xml
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csproj.CoreCompileInputs.cache
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
+C:\Users\marko\Downloads\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
