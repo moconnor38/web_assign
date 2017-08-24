@@ -47,43 +47,36 @@
 		</div>*@
 		<nav class="navbar navbar-default -dark bg-dark" >
 			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="#">WebSiteName</a>
-				</div>
+
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="#">Home</a></li>
 
-					<li><div class="dropdown">
-	<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-		Dropdown Example
-		<span class="caret"></span>
-	</button>
-	<ul class="dropdown-menu">
-		<li><a href="#">HTML</a></li>
-		<li><a href="#">CSS</a></li>
-		<li><a href="#">JavaScript</a></li>
-	</ul>
-</div></li>
+
 					<li>
-					@Html.ActionLink("Browse Games", "Index", "Books")
-					<ul>
-						<li>@Html.ActionLink("Action", "ASPQuiz", "Quiz")</li>
-						<li>@Html.ActionLink("RPG", "CSharpQuiz", "Quiz")</li>
-						<li>@Html.ActionLink("Strategy", "JavaQuiz", "Quiz")</li>
-					</ul>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Browse Games
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">@Html.ActionLink("Action", "ASPQuiz", "Quiz")</a></li>
+							<li><a href="#">@Html.ActionLink("RPG", "CSharpQuiz", "Quiz")</a></li>
+							<li><a href="#">@Html.ActionLink("Strategy", "JavaQuiz", "Quiz")</a></li>
+						</ul>
+
 					</li>
 					<li>@Html.ActionLink("About Us", "Index", "About")</li>
 					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
 					<li>@Html.ActionLink("Quizes", "Index", "Quiz")</li>
 
-					<a href="#" class="btn btn-info" role="button">Sign In</a>
-					<a href="#" class="btn btn-info" role="button">Register</a>
-					<form class="form-inline">
-						
-						<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
-						<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-					</form>
 				</ul>
+				<a href="#" class="btn btn-info" role="button">Sign In</a>
+				<a href="#" class="btn btn-info" role="button">Register</a>
+				<form class="form-inline">
+
+					<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
 			</div>
 		</nav>
 		<h2>Now Available to play</h2>
@@ -105,9 +98,6 @@
 					<img src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
 				</div>
 
-				<div class="item">
-					<img src="ny.jpg" alt="Game Image">
-				</div>
 			</div>
 
 			<!-- Left and right controls -->
