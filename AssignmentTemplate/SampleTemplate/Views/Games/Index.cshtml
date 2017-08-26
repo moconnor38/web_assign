@@ -6,19 +6,16 @@
 <h2>Games in Stock</h2>
 
 
-@for (int i = 0; i < Model.Count(); i += 3)
-{
 	<div class="row">
 	@foreach (var game in Model) 
 		{
 		<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" />
 		<p>@game.Title</p>
-		<p>@game.Publisher</p>
+		<p>@game.Publisher</p>	
 		</div>
 		}
 	</div>
 
-}
 
 
 
