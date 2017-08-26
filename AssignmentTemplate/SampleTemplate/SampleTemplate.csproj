@@ -89,6 +89,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Images\Adam.jpg" />
     <Content Include="Content\Images\Prey.jpg" />
     <Content Include="Content\Images\smallgame.jpg" />
     <Content Include="Content\Images\titanfall2.jpg" />
