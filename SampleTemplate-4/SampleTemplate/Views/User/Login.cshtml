@@ -1,0 +1,23 @@
+﻿@model SampleTemplate.Models.UserModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    @Html.ValidationSummary(false,"",new {@class="error" })
+    <p>
+        @Html.LabelFor(u=>u.Email)
+        @Html.TextBoxFor(u=>u.Email)
+    </p>
+    <p>
+        @Html.LabelFor(u => u.Password)
+        @Html.PasswordFor(u => u.Password)
+    </p>
+    <p>
+        <input id="Submit1" type="submit" value="Submit" />
+        <input id="Reset1" type="reset" value="Clear" />
+    </p>
+}
+
