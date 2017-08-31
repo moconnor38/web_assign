@@ -28,16 +28,24 @@ header{
 	float:right;
 }
 
-main{
-    color:darkslategray;
-    border:2px solid darkgray;
-    border-radius:10px;
-    padding:10px;
-    min-height:500px;
-    height:auto;
+.carousel-caption {
+text-align:left;
+left:0;
 }
 
-footer{
-    text-align:center;
-    
+main {
+	color: darkslategray;
+	border: 2px solid darkgray;
+	border-radius: 10px;
+	padding: 10px;
+	min-height: 500px;
+	height: auto;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.footer{
+color: black;
 }

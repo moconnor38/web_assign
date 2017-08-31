@@ -53,37 +53,55 @@
 		</nav>
 		<h2>New Releases Available to Play</h2>
 		@*w3schools*@
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-			<!-- Indicators -->
-			<ol class="carousel-indicators">
-				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-			</ol>
 
-			<!-- Wrapper for slides -->
-			<div class="carousel-inner">
-				<div class="item active">
-					<img  src="~/Content/Images/Prey.jpg" alt="Prey">
+		<div class="row">
+			<div class="col-sm-8">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="~/Content/Images/Prey.jpg" alt="Prey">
+							<div class="carousel-caption">
+								<h3>Prey</h3>
+								<p>Available to Play Now!</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
+							<div class="carousel-caption">
+								<h3>Titanfall 2</h3>
+								<p>Available to Play Now!</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
 				</div>
-
-				<div class="item">
-					<img src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
-				</div>
-
 			</div>
-
-			<!-- Left and right controls -->
-			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-				<span class="glyphicon glyphicon-chevron-left"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="right carousel-control" href="#myCarousel" data-slide="next">
-				<span class="glyphicon glyphicon-chevron-right"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	
+			<div class="col-sm-4">
+			</div>
+			<p>
+				New Releases
+			</p>
+			<p>
+				Join Now
+			</p>
+			</div>
 		@*<div class="row">
 			<p>Featured Games</p>
 			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
@@ -93,53 +111,42 @@
 		</div>*@
         <main>
 
-
             @RenderBody()
         </main>
         <footer>
             <hr />
             @*&copy;Dublin Business School, @DateTime.Now.Year.*@
 			@*From bootsnip.com*@
-			<div class="container text-center">
-				<hr />
+			<div class="footer">
 				<div class="row">
 					<div class="col-lg-12">
 						<div class="col-md-3">
-							<ul class="nav nav-pills nav-stacked">
+							<ul>
 								<li><a href="#">About us</a></li>
 								<li><a href="#">Blog</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Product for Mac</a></li>
-								<li><a href="#">Product for Windows</a></li>
+							<ul>
+								<li><a href="#">User Agreement</a></li>
+								<li><a href="#">Legal</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Web analytics</a></li>
-								<li><a href="#">Presentations</a></li>
+							<ul>
+								<li><a href="#">Privacy and Cookie Policy</a></li>
+								<li><a href="#">Corporate Information</a></li>
 							</ul>
 						</div>
 						<div class="col-md-3">
-							<ul class="nav nav-pills nav-stacked">
-								<li><a href="#">Product Help</a></li>
-								<li><a href="#">Developer API</a></li>
+							<ul>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">© Force Gaming</a></li>
 							</ul>
 						</div>
 					</div>
 				</div>
 				<hr>
-				<div class="row">
-					<div class="col-lg-12">
-						<ul class="nav nav-pills nav-justified">
-							<li><a href="/">© 2013 Company Name.</a></li>
-							<li><a href="#">Terms of Service</a></li>
-							<li><a href="#">Privacy</a></li>
-						</ul>
-					</div>
-				</div>
 			</div>
         </footer>
     </div>
