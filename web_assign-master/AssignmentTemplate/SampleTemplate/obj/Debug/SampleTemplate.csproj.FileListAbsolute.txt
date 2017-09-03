@@ -241,6 +241,7 @@ C:\Web_App\web_assign\AssignmentTemplate\SampleTemplate\bin\System.Web.Mvc.xml
 C:\Web_App\web_assign\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
 C:\Web_App\web_assign\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
 C:\Web_App\web_assign\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+<<<<<<< HEAD:web_assign-master/AssignmentTemplate/SampleTemplate/obj/Debug/SampleTemplate.csproj.FileListAbsolute.txt
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\.attribute^
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe.config
@@ -289,3 +290,5 @@ C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\bin\System.Web.Mv
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
 C:\Web_App\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+=======
+>>>>>>> de64bf8e48f2ce493e358227eb89e574f77581ff:AssignmentTemplate/SampleTemplate/obj/Debug/SampleTemplate.csproj.FileListAbsolute.txt
