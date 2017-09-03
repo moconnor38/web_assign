@@ -1,0 +1,34 @@
+﻿@model IEnumerable<SampleTemplate.Models.Game>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Games in Stock</h2>
+
+
+	<div class="row">
+	@foreach (var game in Model) 
+		{
+		<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" alt="@game.Title" />
+		<p>@game.Title</p>
+		<p>@game.Publisher</p>	
+		</div>
+		}
+	</div>
+
+
+
+
+@*@foreach (var game in Model)
+{
+	<section>
+		<img alt="@game.Title" src="~/Content/Images/smallgame.jpg" width="100" height="100" />
+		<h4>
+			@game.Title<br />
+			Developer: @game.Developer
+		</h4>
+		<h4>Price: &euro;@game.Price</h4>
+		<hr />
+	</section>
+}*@
+

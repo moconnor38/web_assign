@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/styles.css" type="text/css" />
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            @*<img alt="logo" src="~/Content/Images/logo.gif" class="right" />*@
+			<img alt="logo" src="~/Content/Images/Adam.jpg" class="right" />
+            <h2><em>Force Gaming</em></h2>
+        </header>
+		@* bootstrap.com *@
+		<nav class="navbar navbar-default -dark bg-dark" >
+			<div class="container-fluid">
+
+				<ul class="nav navbar-nav">
+					<li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+
+
+					<li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Browse Games
+							<span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li>@Html.ActionLink("Action", "Index", "Games")</li>
+							<li>@Html.ActionLink("RPG", "Index", "Games")</li>
+							<li>@Html.ActionLink("Strategy", "Index", "Games")</li>
+						</ul>
+
+					</li>
+					<li>@Html.ActionLink("About Us", "Index", "About")</li>
+					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
+					<li>@Html.ActionLink("Sign In", "Index", "SignIn")</li>
+					<li>@Html.ActionLink("Register", "Index", "Register")</li>
+				</ul>
+
+				
+				<form class="form-inline">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
+		<h2>New Releases Available to Play</h2>
+		@*w3schools*@
+
+		<div class="row">
+			<div class="col-sm-8">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+					<!-- Indicators -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>
+
+					<!-- Wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="~/Content/Images/Prey.jpg" alt="Prey">
+							<div class="carousel-caption">
+								<h3>Prey</h3>
+								<p>Available to Play Now!</p>
+							</div>
+						</div>
+						<div class="item">
+							<img src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
+							<div class="carousel-caption">
+								<h3>Titanfall 2</h3>
+								<p>Available to Play Now!</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Left and right controls -->
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+						<span class="sr-only">Next</span>
+					</a>
+				</div>
+			</div>
+			<div class="col-sm-4">
+			</div>
+			<p>
+				New Releases
+			</p>
+			<p>
+				Join Now
+			</p>
+			</div>
+		@*<div class="row">
+			<p>Featured Games</p>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
+		</div>*@
+        <main>
+
+            @RenderBody()
+        </main>
+        <footer>
+            <hr />
+            @*&copy;Dublin Business School, @DateTime.Now.Year.*@
+			@*From bootsnip.com*@
+			<div class="footer">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#">User Agreement</a></li>
+								<li><a href="#">Legal</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#">Privacy and Cookie Policy</a></li>
+								<li><a href="#">Corporate Information</a></li>
+							</ul>
+						</div>
+						<div class="col-md-3">
+							<ul>
+								<li><a href="#">Terms of Service</a></li>
+								<li><a href="#">© Force Gaming</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr>
+			</div>
+        </footer>
+    </div>
+</body>
+</html>
