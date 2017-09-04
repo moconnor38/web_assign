@@ -10,11 +10,11 @@ namespace SampleTemplate.Controllers
     public class GameCartController : Controller
     {
         DAO dao = new DAO();
-        static List<Game1> selectedBooks = new List<Game1>();
+        static List<Game1> selectedGames = new List<Game1>();
         static List<ItemModel> selectedItems = new List<ItemModel>();
 
         decimal totalPrice = 0.0m;
-        decimal totalPriceBook = 0.0m;
+        decimal totalPriceGame = 0.0m;
         // GET: Cart
         public ActionResult Index()
         {
@@ -22,17 +22,17 @@ namespace SampleTemplate.Controllers
         }
 
         [HttpPost]
-        public ActionResult AddBook(FormCollection form)
+        public ActionResult AddGame(FormCollection form)
         {
-            List<Game1> list = dao.ShowAllBooks1();
+            List<Game1> list = dao.ShowAllGames1();
             bool found = false, found1 = false;
 
             for (int i = 0; i < list.Count && found1 == false; i++)
             {
-                if (list[i].ISBN == form["isbn"])
+                if (list[i].Title == form["title"])
                 {
                     list[i].Quantity = int.Parse(form["quantity"]);
-                    selectedBooks.Add(list[i]);
+                    selectedGames.Add(list[i]);
                     found1 = true;
                 }
             }
@@ -83,23 +83,23 @@ namespace SampleTemplate.Controllers
 
         public ActionResult ClearAll()
         {
-            selectedBooks.Clear();
+            selectedGames.Clear();
             selectedItems.Clear();
             return RedirectToAction("ViewCart");
         }
 
         public ActionResult ViewCart()
         {
-            foreach (Book1 book in selectedBooks)
+            foreach (Game1 game in selectedGames)
             {
                 ItemModel item = new ItemModel();
 
-                totalPriceBook = totalPriceBook + book.Quantity * book.Price;
-                item.ItemId = book.ISBN;
-                item.Title = book.Title;
-                item.Quantity = book.Quantity;
-                item.Price = book.Price;
-                item.TotalPrice = totalPriceBook;
+                totalPriceGame = totalPriceGame + game.Quantity * game.Price;
+                //item.ItemId = game.ID;
+                item.Title = game.Title;
+                item.Quantity = game.Quantity;
+                item.Price = game.Price;
+                item.TotalPrice = totalPriceGame;
                 selectedItems.Add(item);
 
             }
@@ -109,7 +109,7 @@ namespace SampleTemplate.Controllers
             }
             ViewBag.TransactionPrice = totalPrice;
             //To remove from the selected books to avoid adding them in selected items again and again
-            selectedBooks.Clear();
+            selectedGames.Clear();
             return View(selectedItems);
         }
 

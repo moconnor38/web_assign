@@ -128,12 +128,9 @@
     </Compile>
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\Game.cs" />
-<<<<<<< HEAD:web_assign-master/AssignmentTemplate/SampleTemplate/SampleTemplate.csproj
     <Compile Include="Models\Game1.cs" />
     <Compile Include="Models\Item.cs" />
     <Compile Include="Models\ItemModel.cs" />
-=======
->>>>>>> de64bf8e48f2ce493e358227eb89e574f77581ff:AssignmentTemplate/SampleTemplate/SampleTemplate.csproj
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -151,12 +148,9 @@
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\User\Register.cshtml" />
     <Content Include="Views\SignIn\View2.cshtml" />
-<<<<<<< HEAD:web_assign-master/AssignmentTemplate/SampleTemplate/SampleTemplate.csproj
     <Content Include="Views\Shared\LoginRegister.cshtml" />
     <Content Include="Views\GamesCart\CheckoutCard.cshtml" />
     <Content Include="Views\GamesCart\CardList.cshtml" />
-=======
->>>>>>> de64bf8e48f2ce493e358227eb89e574f77581ff:AssignmentTemplate/SampleTemplate/SampleTemplate.csproj
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
