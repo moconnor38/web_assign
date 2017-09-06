@@ -8,6 +8,28 @@
 	float:left;
 }
 
+.button-primary {
+	border-color: black;
+	background-color: grey;
+}
+
+.button-primary:hover {
+		border-color: pink;
+		background-color: yellow;
+}
+
+.button-primary:active:focus {
+		border-color: pink;
+		background-color: yellow;
+}
+
+.box {
+	padding: 0 5px 0 5px;
+}
+
+.box .inner {
+	background-color: #fff;
+}
 
 header{
     height:100px;
@@ -33,13 +55,20 @@ text-align:left;
 left:0;
 }
 
+#myCarousel {
+	width:800px;
+	display:block;
+	margin: 0 auto;
+}
+
+
 main {
-	color: darkslategray;
+	/*color: darkslategray;
 	border: 2px solid darkgray;
 	border-radius: 10px;
 	padding: 10px;
 	min-height: 500px;
-	height: auto;
+	height: auto;*/
 }
 
 ul {
