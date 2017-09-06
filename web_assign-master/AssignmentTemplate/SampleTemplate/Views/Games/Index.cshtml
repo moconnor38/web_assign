@@ -3,19 +3,23 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Games in Stock</h2>
+<h2>Games available for download</h2>
+<section>
+    <div class="row">
+        @foreach (var game in Model)
 
+        {
+            <div class="col-sm-3">
+                <img src="~/Content/Images/@game.GameImage" alt="@game.Title" />
+                <p> @game.Title</p>
+                <p> Publisher: @game.Publisher</p>
+                <p> &euro;@game.Price</p>
+                <p> Developed by : @game.Developer</p>
+                <p> Genre: @game.Genre</p>
 
-	<div class="row">
-	@foreach (var game in Model) 
-		{
-		<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" alt="@game.Title" />
-		<p>@game.Title</p>
-		<p>@game.Publisher</p>	
-		</div>
-		}
-	</div>
-
+            </div>}
+    </div>
+</section>
 
 
 

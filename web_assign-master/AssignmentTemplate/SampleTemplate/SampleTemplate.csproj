@@ -94,12 +94,27 @@
       <DependentUpon>Data.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\Adam.jpg" />
+    <Content Include="Content\Images\Darksouls2.jpg" />
+    <Content Include="Content\Images\Destiny2.jpg" />
+    <Content Include="Content\Images\Diablo3.jpg" />
+    <Content Include="Content\Images\Fallout4.jpg" />
+    <Content Include="Content\Images\FFXIV.jpg" />
+    <Content Include="Content\Images\League.jpg" />
+    <Content Include="Content\Images\Masseffect.jpg" />
+    <Content Include="Content\Images\Overwatch.jpg" />
     <Content Include="Content\Images\Prey.jpg" />
+    <Content Include="Content\Images\PreySmall.jpg" />
+    <Content Include="Content\Images\Skyrim.jpg" />
     <Content Include="Content\Images\smallgame.jpg" />
     <Content Include="Content\Images\titanfall2.jpg" />
+    <Content Include="Content\Images\Titansmall.jpg" />
+    <Content Include="Content\Images\Witcher.jpg" />
+    <Content Include="Content\Images\WoW.jpg" />
+    <Content Include="Content\Images\Xcom2.jpg" />
     <Content Include="Content\styles.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="PreySmall.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -128,9 +143,7 @@
     </Compile>
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\Game.cs" />
-    <Compile Include="Models\Game1.cs" />
     <Compile Include="Models\Item.cs" />
-    <Compile Include="Models\ItemModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -145,12 +158,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\User\Index.cshtml" />
-    <Content Include="Views\User\Login.cshtml" />
-    <Content Include="Views\User\Register.cshtml" />
-    <Content Include="Views\SignIn\View2.cshtml" />
     <Content Include="Views\Shared\LoginRegister.cshtml" />
-    <Content Include="Views\GamesCart\CheckoutCard.cshtml" />
-    <Content Include="Views\GamesCart\CardList.cshtml" />
+    <Content Include="Views\GamesCart\CheckoutCart.cshtml" />
+    <Content Include="Views\GamesCart\CartList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -158,9 +168,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Views\GameCart\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

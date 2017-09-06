@@ -1,34 +1,55 @@
-﻿
+﻿@model SampleTemplate.Models.UserModel
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Register</h2>
+<h3>Fill out this quick form below to begin your gaming experience!</h3>
+@using (Html.BeginForm("Register", "User", FormMethod.Post))
+{
+    @Html.ValidationSummary(false, "", new { @class = "error" })
+    <p>
+        @Html.LabelFor(u => u.FirstName)
+        @Html.TextBoxFor(u => u.FirstName)
+    </p>
+        <p>
+            @Html.LabelFor(u => u.LastName)
+            @Html.TextBoxFor(u => u.LastName)
+        </p>
+        <p>
+            @Html.LabelFor(u => u.Email)
+            @Html.TextBoxFor(u => u.Email)
+        </p>
+        <p>
+            @Html.LabelFor(u => u.Password)
+            @Html.PasswordFor(u => u.Password)
+        </p>
+        <p>
+            @Html.LabelFor(u => u.ComparePassword)
+            @Html.PasswordFor(u => u.ComparePassword)
+        </p>
+        <p>
+            <fieldset name="payment">
+                <legend><b>Payment info: </b></legend>
+                <label for="cardCarrier">Card carrier:</label>
+                <select name="cardCarrier" id="cardCarrier">
+                    <option value="waws">Visa</option>
+                    <option value="ms">MasterCard</option>
+                    <option value="ws">Laser</option>
+                    <option value="cs">Maestro</option>
+                </select>*<br>
+                <label for="cardNo">Card number:</label>
+                <input type="text" size="30" placeholder="0000 0000 0000 0000" name="cardNo" id="cardNo" required>*<br>
+                <label>Security code:</label>
+                <input type="text" size="30" placeholder="000" name="security" id="security" required>*&nbsp;<br>
+                <label for="expiry">Expiry date:</label>
+                <input type="text" size="30" placeholder="MM/YYYY" name="expiry" id="expiry" required>*<br>
+            </fieldset>
 
-<h4>No account yet? Fill in the form below to start gaming:</h4>
-<fieldset name="personal">
-	<legend><b>Personal info: </b></legend>
-	<label for="name">Name:</label>
-	<input type="text" size="30" placeholder="Mary Murphy" name="name" id="name" required>*<br>
-	<label for="email">E-mail:</label>
-	<input type="email" size="30" placeholder="marymurphy@eircom.net" name="email" id="email"><br>
-</fieldset><br />
-<fieldset name="payment">
-	<legend><b>Payment info: </b></legend>
-	<label for="cardCarrier">Card carrier:</label>
-	<select name="cardCarrier" id="cardCarrier">
-		<option value="waws">Visa</option>
-		<option value="ms">MasterCard</option>
-		<option value="ws">Laser</option>
-		<option value="cs">Maestro</option>
-	</select>*<br>
-	<label for="cardNo">Card number:</label>
-	<input type="text" size="30" placeholder="0000 0000 0000 0000" name="cardNo" id="cardNo" required>*<br>
-	<label>Security code:</label>
-	<input type="text" size="30" placeholder="000" name="security" id="security" required>*&nbsp;<br>
-	<label for="expiry">Expiry date:</label>
-	<input type="text" size="30" placeholder="MM/YYYY" name="expiry" id="expiry" required>*<br>
-</fieldset>
-<p class="footnote">* Fields marked with an asterisk are required.</p>
-<input class="formbutton" type="submit" value="Submit booking" />
-<input class="formbutton" type="reset" name="resetBooking" onclick="return confirmReset();" value="Reset all fields to default" />
+            <input id="Submit1" type="submit" value="Register" />
+            <input id="Reset1" type="reset" value="Clear" />
+
+        <p class="footnote">* Fields marked with an asterisk are required.</p>
+        <input class="formbutton" type="submit" value="Submit booking" />
+        <input class="formbutton" type="reset" name="resetBooking" onclick="return confirmReset();" value="Reset all fields to default" />
+       </p>
+}

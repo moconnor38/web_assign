@@ -8,6 +8,28 @@
 	float:left;
 }
 
+.btn-primary {
+	border-color: black;
+	background-color: grey;
+}
+
+.btn-primary:hover {
+		border-color: pink;
+		background-color: yellow;
+}
+
+.btn-primary:active:focus {
+		border-color: pink;
+		background-color: yellow;
+}
+
+.box {
+	padding: 0 5px 0 5px;
+}
+
+.box .inner {
+	background-color: #fff;
+}
 
 header{
     height:100px;
@@ -32,6 +54,13 @@ header{
 text-align:left;
 left:0;
 }
+
+#myCarousel {
+	width:800px;
+	display:block;
+	margin: 0 auto;
+}
+
 
 main {
 	color: darkslategray;

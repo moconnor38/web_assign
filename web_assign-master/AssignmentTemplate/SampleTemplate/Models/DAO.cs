@@ -99,7 +99,7 @@ namespace SampleTemplate.Models
         }
         #endregion
 
-        #region Books
+        #region Games
         public List<Game> ShowAllGames()
         {
             List<Game> gamelist = new List<Game>();
@@ -111,7 +111,6 @@ namespace SampleTemplate.Models
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
-
                 conn.Open();
                 reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -135,123 +134,9 @@ namespace SampleTemplate.Models
             {
                 conn.Close();
             }
-
             return gamelist;
-        }
-
-        public List<Game1> ShowAllGames1()
-        {
-            List<Game1> gameList = new List<Game1>();
-            SqlCommand cmd;
-            SqlDataReader reader;
-            //Calling connection method to establish connection string
-            Connection();
-            cmd = new SqlCommand("SELECT * FROM Game1", conn);
-            //cmd.CommandType = CommandType.StoredProcedure;
-            try
-            {
-
-                conn.Open();
-                reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Game1 game = new Game1();
-                    game.DatePublished = DateTime.Parse(reader["DatePublished"].ToString());
-                    game.Developer = reader["Developer"].ToString();
-                    game.GameImage = reader["GameImage"].ToString();
-                    game.Publisher = reader["Publisher"].ToString();
-                    game.Title = reader["Title"].ToString();
-                    game.Price = decimal.Parse(reader["Price"].ToString());
-                    game.Genre = reader["Genre"].ToString();
-                    game.GameImage = reader["GameImage"].ToString();
-                    using (MemoryStream ms = new MemoryStream((byte[])reader["GameImage"]))
-                    {
-                        //game.GameImage= ms.ToArray(); not sure why this isn't working, must ask Shazia
-                    }
-
-                    gameList.Add(game);
-                }
-            }
-            catch (SqlException ex)
-            {
-                message = ex.Message;
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return gameList;
-        }
+        }        
         #endregion
-
-        #region Transaction
-        public int AddTransaction(string transactionId, DateTime date, decimal totalprice, string email)
-        {
-            int count = 0;
-            SqlCommand cmd;
-
-            Connection();
-
-            cmd = new SqlCommand("uspInsertTransactionTable", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@id", transactionId);
-            cmd.Parameters.AddWithValue("@date", date);
-            cmd.Parameters.AddWithValue("@price", totalprice);
-
-            cmd.Parameters.AddWithValue("@email", email);
-
-            try
-            {
-                conn.Open();
-                count = cmd.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                message = ex.Message;
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return count;
-
-        }
-
-        public int AddTransactionItem(string transactionId, ItemModel item)
-        {
-            int count = 0;
-            SqlCommand cmd;
-
-            Connection();
-
-            cmd = new SqlCommand("uspTransactionItem", conn);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@tranId", transactionId);
-            cmd.Parameters.AddWithValue("@id", item.ItemId);
-
-            cmd.Parameters.AddWithValue("@quantity", item.Quantity);
-
-
-            try
-            {
-                conn.Open();
-                count = cmd.ExecuteNonQuery();
-            }
-            catch (SqlException ex)
-            {
-                message = ex.Message;
-            }
-            finally
-            {
-                conn.Close();
-            }
-
-            return count;
-        }
-        #endregion
-
-
+        
     }
 }
