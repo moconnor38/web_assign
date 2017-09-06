@@ -341,6 +341,7 @@ C:\Users\Mark\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj
 C:\Users\Mark\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csproj.CoreCompileInputs.cache
 C:\Users\Mark\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
 C:\Users\Mark\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+<<<<<<< HEAD
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\.attribute^
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\bin\roslyn\csc.exe.config
@@ -389,3 +390,5 @@ C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\bin\Sy
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.csprojResolveAssemblyReference.cache
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.dll
 C:\Web_App\web_assign\web_assign-master\AssignmentTemplate\SampleTemplate\obj\Debug\SampleTemplate.pdb
+=======
+>>>>>>> e36d90a69931230daac5a314420d57fd9a1818c0
