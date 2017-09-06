@@ -8,17 +8,17 @@
 	float:left;
 }
 
-.button-primary {
+.btn-primary {
 	border-color: black;
 	background-color: grey;
 }
 
-.button-primary:hover {
+.btn-primary:hover {
 		border-color: pink;
 		background-color: yellow;
 }
 
-.button-primary:active:focus {
+.btn-primary:active:focus {
 		border-color: pink;
 		background-color: yellow;
 }
