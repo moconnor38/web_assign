@@ -12,7 +12,7 @@ namespace SampleTemplate.Controllers
         DAO dao = new DAO();
         public ActionResult Index()
         {
-            List<Game> gamelist = new List<Game>()
+             List<Game> gamelist = new List<Game>()
             //List<Game1> gamelist = dao.ShowAllGames();
             {
                 new Game{ Developer="Arkane",Title="Prey", DatePublished= new DateTime(2017, 12, 03), Publisher="Bethesda", Price=34.99m,GameImage="PreySmall.jpg" },

@@ -2,6 +2,8 @@
     width: 80%;
     margin: 0 auto;
     padding:0;
+    background-image:url(Images/blocks_background.jpg);
+    color:white;
 }
 
 #navbar {
@@ -32,12 +34,13 @@
 }
 
 header{
+    background-image:url(Images/blue_background.jpg);
     height:100px;
     padding-left:10px;
     padding-top:15px;
     padding-bottom:10px;
-    background-color:dimgrey;
-    color:orangered;
+    background-color:blue;
+    color:cyan;
 }
 
 
