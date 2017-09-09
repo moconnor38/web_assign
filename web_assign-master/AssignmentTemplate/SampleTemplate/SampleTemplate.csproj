@@ -94,11 +94,14 @@
       <DependentUpon>CAData.mdf</DependentUpon>
     </Content>
     <Content Include="Content\Images\Adam.jpg" />
+    <Content Include="Content\Images\blocks_background.jpg" />
+    <Content Include="Content\Images\blue_background.jpg" />
     <Content Include="Content\Images\Darksouls2.jpg" />
     <Content Include="Content\Images\Destiny2.jpg" />
     <Content Include="Content\Images\Diablo3.jpg" />
     <Content Include="Content\Images\Fallout4.jpg" />
     <Content Include="Content\Images\FFXIV.jpg" />
+    <Content Include="Content\Images\Force.jpg" />
     <Content Include="Content\Images\League.jpg" />
     <Content Include="Content\Images\Masseffect.jpg" />
     <Content Include="Content\Images\Overwatch.jpg" />
@@ -133,7 +136,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AboutController.cs" />
-    <Compile Include="Controllers\GameCartController.cs" />
+    <Compile Include="Controllers\GameInfoController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
@@ -145,7 +148,6 @@
     </Compile>
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\Game.cs" />
-    <Compile Include="Models\Item.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,8 +163,6 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\User\Index.cshtml" />
     <Content Include="Views\Shared\LoginRegister.cshtml" />
-    <Content Include="Views\GamesCart\CheckoutCart.cshtml" />
-    <Content Include="Views\GamesCart\CartList.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -170,7 +170,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Views\GameInfo\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
