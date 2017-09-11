@@ -1,13 +1,17 @@
 ﻿#wrapper {
     width: 80%;
     margin: 0 auto;
-    padding:0;
-    background-image:url(Images/blocks_background.jpg);
-    color:white;
+    padding: 0;
+    background-image: url(Images/blocks_background.jpg);
+    color: white;
+    text-shadow: 0 0 7px black;
 }
 
-#navbar {
+nav {
 	float:left;
+    width: 100%;
+    color: black;
+    text-shadow: none;
 }
 
 .btn-primary {
@@ -53,25 +57,25 @@ header{
 	float:right;
 }
 
+#myCarousel {
+    width: auto;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .carousel-caption {
 text-align:left;
 left:0;
 }
 
-#myCarousel {
-	width:800px;
-	display:block;
-	margin: 0 auto;
-}
-
-
 main {
 	/*color: darkslategray;
 	border: 2px solid darkgray;
-	border-radius: 10px;
-	padding: 10px;
+	border-radius: 10px;*/
+	padding: 0px 20px;
 	min-height: 500px;
-	height: auto;*/
+	height: auto;
 }
 
 ul {
@@ -80,6 +84,10 @@ ul {
 
 .footer{
 color: black;
+}
+
+.col-md-3 {
+text-shadow: 0 0 7px black;
 }
 
 .error {
@@ -103,16 +111,16 @@ color: lightgreen;
 
 form {
     margin: 10px;
-    text-shadow: 0px 0px 10px #000000;
+    text-shadow: 0px 0px 10px black;
 }
 
 fieldset {
     margin: 5px;
-    border-color: #000000;
+    border-color: black;
 }
 
 legend {
-    font-weight: bold;
+    color: white;
 }
 
 label {
@@ -121,10 +129,11 @@ label {
 }
 
 input {
-    border: solid 1px #000000;
+    border: solid 1px black;
     border-radius: 7px;
     width: 200px;
     padding: 2px 5px;
+    color: black;
 }
 
 .checklabel {
@@ -137,17 +146,17 @@ input {
 }
 
 select {
-    border: solid 1px #000000;
+    border: solid 1px black;
     border-radius: 7px;
     padding: 2px 5px;
 }
 
 .ui-datepicker {
-    background: #000000;
+    background: black;
     border: 1px solid #555;
     color: darkblue;
     background-color: black;
-    box-shadow: 5px 5px 5px #000000;
+    box-shadow: 5px 5px 5px black;
     padding: 3px 5px;
     border-radius: 10px;
 }
@@ -159,6 +168,11 @@ select {
 .formbutton {
     background-color: black;
     border-color: dimgrey;
-    box-shadow: 0px 0px 7px 3px #000000;
+    color: white;
+    box-shadow: 0px 0px 7px 3px black;
     margin: 5px 10px 20px 10px;
+}
+
+#cardCarrier{
+    color: black;
 }
