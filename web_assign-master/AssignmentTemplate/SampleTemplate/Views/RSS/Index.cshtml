@@ -1,0 +1,26 @@
+﻿@using System.Xml
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<title>Index</title>
+</head>
+<body>
+	<div style="width: 80%; background-color:lightblue;height:500px;overflow:scroll">
+		<h2>@ViewBag.Title</h2>
+		@foreach (XmlNode node in (XmlNodeList)ViewBag.List)
+		{
+			if (node.Name == "item")
+			{
+				<h3><a href=@node["link"].InnerText alt=@node["title"].InnerText>@node["title"].InnerText</a></h3>
+				<p>@node["description"].InnerText</p>
+			}
+		}
+	</div>
+</body>
+</html>
