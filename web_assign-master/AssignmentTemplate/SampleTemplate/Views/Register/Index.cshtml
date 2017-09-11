@@ -2,54 +2,69 @@
 @{
     ViewBag.Title = "Index";
 }
-
-<h3>Fill out this quick form below to begin your gaming experience!</h3>
-@using (Html.BeginForm("Register", "User", FormMethod.Post))
-{
-    @Html.ValidationSummary(false, "", new { @class = "error" })
-    <p>
-        @Html.LabelFor(u => u.FirstName)
-        @Html.TextBoxFor(u => u.FirstName)
-    </p>
+<head>
+    <link rel="stylesheet" href="@Url.Content("~/Content/themes/base/styles.css")" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")" type="text/css" />
+    <link rel="stylesheet" href="@Url.Content("/resources/demos/style.css")" type="text/css" />
+    <script src="@Url.Content("https://code.jquery.com/jquery-1.12.4.js")" type="text/javascript"></script>
+    <script src="@Url.Content("https://code.jquery.com/ui/1.12.1/jquery-ui.js")" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $(".datepicker").datepicker({ minDate: 0 });
+        });
+    </script>
+</head>
+<body>
+    <h3>Fill out this quick form below to begin your gaming experience!</h3>
+    @using (Html.BeginForm("Register", "User", FormMethod.Post))
+    {
+        @Html.ValidationSummary(false, "", new { @class = "error" })
+        <p>
+            @Html.LabelFor(u => u.FirstName)
+            @Html.TextBoxFor(u => u.FirstName)
+            *
+        </p>
         <p>
             @Html.LabelFor(u => u.LastName)
             @Html.TextBoxFor(u => u.LastName)
+            *
         </p>
         <p>
             @Html.LabelFor(u => u.Email)
             @Html.TextBoxFor(u => u.Email)
+            *
         </p>
         <p>
             @Html.LabelFor(u => u.Password)
             @Html.PasswordFor(u => u.Password)
+            *
         </p>
         <p>
             @Html.LabelFor(u => u.ComparePassword)
             @Html.PasswordFor(u => u.ComparePassword)
+            *
         </p>
         <p>
             <fieldset name="payment">
                 <legend><b>Payment info: </b></legend>
                 <label for="cardCarrier">Card carrier:</label>
                 <select name="cardCarrier" id="cardCarrier">
-                    <option value="waws">Visa</option>
-                    <option value="ms">MasterCard</option>
-                    <option value="ws">Laser</option>
-                    <option value="cs">Maestro</option>
+                    <option value="vs">Visa</option>
+                    <option value="mc">MasterCard</option>
+                    <option value="ls">Laser</option>
+                    <option value="ms">Maestro</option>
                 </select>*<br>
                 <label for="cardNo">Card number:</label>
                 <input type="text" size="30" placeholder="0000 0000 0000 0000" name="cardNo" id="cardNo" required>*<br>
                 <label>Security code:</label>
                 <input type="text" size="30" placeholder="000" name="security" id="security" required>*&nbsp;<br>
                 <label for="expiry">Expiry date:</label>
-                <input type="text" size="30" placeholder="MM/YYYY" name="expiry" id="expiry" required>*<br>
+                <input type="text" size="30" placeholder="MM/YYYY" name="expiry" id="expiry" class="datepicker" required>*<br>
             </fieldset>
 
-            <input id="Submit1" type="submit" value="Register" />
-            <input id="Reset1" type="reset" value="Clear" />
-
         <p class="footnote">* Fields marked with an asterisk are required.</p>
-        <input class="formbutton" type="submit" value="Submit booking" />
-        <input class="formbutton" type="reset" name="resetBooking" onclick="return confirmReset();" value="Reset all fields to default" />
-       </p>
-}
+        <input class="formbutton" type="submit" value="Register" />
+        <input class="formbutton" type="reset" name="resetRegister" onclick="return confirmReset();" value="Reset all fields to default" />
+        </p>
+    }
+</body>
