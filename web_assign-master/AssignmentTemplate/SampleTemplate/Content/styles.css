@@ -99,3 +99,66 @@ color: white;
 color: lightgreen;
 }
 
+/*__________Registration formatting___________*/
+
+form {
+    margin: 10px;
+    text-shadow: 0px 0px 10px #000000;
+}
+
+fieldset {
+    margin: 5px;
+    border-color: #000000;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+}
+
+input {
+    border: solid 1px #000000;
+    border-radius: 7px;
+    width: 200px;
+    padding: 2px 5px;
+}
+
+.checklabel {
+    font-size: 90%;
+    width: 195px;
+}
+
+#price {
+    width: 280px;
+}
+
+select {
+    border: solid 1px #000000;
+    border-radius: 7px;
+    padding: 2px 5px;
+}
+
+.ui-datepicker {
+    background: #000000;
+    border: 1px solid #555;
+    color: darkblue;
+    background-color: black;
+    box-shadow: 5px 5px 5px #000000;
+    padding: 3px 5px;
+    border-radius: 10px;
+}
+
+.footnote {
+    font-size: 75%;
+}
+
+.formbutton {
+    background-color: black;
+    border-color: dimgrey;
+    box-shadow: 0px 0px 7px 3px #000000;
+    margin: 5px 10px 20px 10px;
+}
