@@ -13,11 +13,11 @@
                 <img src="~/Content/Images/@game.GameImage" alt="@game.Title" />
                 <p> @game.Title</p>
                 <p> Publisher: @game.Publisher</p>
-                <p> &euro;@game.Price</p>
-                <p> Developed by : @game.Developer</p>
+                @*<p> &euro;@game.Price</p>*@
+                <p> Developed by: @game.Developer</p>
                 <p> Genre: @game.Genre</p>
 		<p>
-			@Html.ActionLink("Buy", "Index", "Register", null, new { @class = "btn btn-primary btn-small" })
+			@Html.ActionLink("Download", "Index", "Register", null, new { @class = "btn btn-primary btn-small" })
 		</p>
                  
             </div>}

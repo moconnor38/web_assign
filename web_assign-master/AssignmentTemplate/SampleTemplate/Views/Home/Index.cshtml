@@ -17,16 +17,17 @@
 			</ol>
 
 			<!-- Wrapper for slides -->
+<!-- Idea: will I change this to a foreach loop of the games images? -Cathal -->
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="~/Content/Images/Prey.jpg" alt="Prey">
+					<img class="carousel-image" src="~/Content/Images/Prey.jpg" alt="Prey">
 					<div class="carousel-caption">
 						<h3>Prey</h3>
 						<p>Available to Play Now!</p>
 					</div>
 				</div>
 				<div class="item">
-					<img src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
+					<img class="carousel-image" src="~/Content/Images/titanfall2.jpg" alt="Titanfall 2 ">
 					<div class="carousel-caption">
 						<h3>Titanfall 2</h3>
 						<p>Available to Play Now!</p>
@@ -56,11 +57,11 @@
 @*</div>*@
 <h2>Welcome to Gaming</h2>
 <p>Explore an instant collection of 75+ PC games and play as much as you want. Origin Access members also get to try new EA games before they’re released and save 10% on Origin purchases.</p>
-<p>Jus €10 a month. Cancel anytime</p>
+<p>Just €10 a month. Cancel anytime!</p>
 <p>	Unlimited access to full PC games
 
 	Download and play an instant collection of 75+ great PC titles.
-	Dive into blockbuster hits from franchises like Battlefield, FIFA, Dragon Age, The Sims, and many more. See all games.
+	Dive into blockbuster hits from franchises like Battlefield, FIFA, Dragon Age, The Sims, and many more. See @Html.ActionLink("all games", "Index", "Games").
 	Explore indie favorites including Torchlight II, The Banner Saga, and Mini Metro.
 	More games are added over time.</p>
 

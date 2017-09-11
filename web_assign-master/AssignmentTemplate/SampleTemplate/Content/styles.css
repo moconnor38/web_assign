@@ -58,15 +58,20 @@ header{
 }
 
 #myCarousel {
-    width: auto;
+    width: 80%;
     height: auto;
     display: block;
     margin: 0 auto;
 }
 
 .carousel-caption {
+margin:0 5%;
 text-align:left;
 left:0;
+}
+
+.carousel-image{
+    width: 100%;
 }
 
 main {
@@ -92,6 +97,10 @@ text-shadow: 0 0 7px black;
 
 .error {
 color: red;
+}
+
+.col-sm-3{
+margin: 15px 0;
 }
 
 .register {
