@@ -1,17 +1,34 @@
-﻿#wrapper {
+﻿body {
+	width: 100%;
+	height: 100%;
+	background-image: url(Images/blocks_background.jpg);
+	color: white;
+	text-shadow: 0 0 7px black;
+}
+
+/*#wrapper {
     width: 80%;
     margin: 0 auto;
     padding: 0;
-    background-image: url(Images/blocks_background.jpg);
-    color: white;
-    text-shadow: 0 0 7px black;
+}*/
+
+header {
+	background-image: url(Images/blue_background.jpg);
+	height: 100px;
+	margin: 0;
+	padding-left: 7%;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	background-color: blue;
+	color: cyan;
 }
 
 nav {
-	float:left;
-    width: 100%;
-    color: black;
-    text-shadow: none;
+	float: left;
+	width: 101%;
+	color: black;
+	text-shadow: none;
+	margin: -10px -3px 0px -3px;
 }
 
 .btn-primary {
@@ -19,59 +36,49 @@ nav {
 	background-color: grey;
 }
 
-.btn-primary:hover {
+	.btn-primary:hover {
 		border-color: pink;
 		background-color: yellow;
-}
+	}
 
-.btn-primary:active:focus {
+	.btn-primary:active:focus {
 		border-color: pink;
 		background-color: yellow;
-}
+	}
 
 .box {
 	padding: 0 5px 0 5px;
 }
 
-.box .inner {
-	background-color: #fff;
-}
+	.box .inner {
+		background-color: #fff;
+	}
 
-header{
-    background-image:url(Images/blue_background.jpg);
-    height:100px;
-    padding-left:10px;
-    padding-top:15px;
-    padding-bottom:10px;
-    background-color:blue;
-    color:cyan;
-}
-
-
-.right{
-    float:right;
-    margin:10px;	
+.right {
+	float: right;
+	margin: 10px;
 }
 
 .form-inline {
-	float:right;
+	float: right;
 }
 
 #myCarousel {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+	width: 80%;
+	height: auto;
+	display: block;
+	margin: 0 auto;
 }
 
 .carousel-caption {
-margin:0 5%;
-text-align:left;
-left:0;
+	margin: 0 5%;
+	text-align: left;
+	left: 0;
 }
 
-.carousel-image{
-    width: 100%;
+.carousel-image {
+	width: 100%;
+	height: auto;
 }
 
 main {
@@ -79,6 +86,9 @@ main {
 	border: 2px solid darkgray;
 	border-radius: 10px;*/
 	padding: 0px 20px;
+	margin: 0 auto;
+	width: 70%;
+	min-width: 200px;
 	min-height: 500px;
 	height: auto;
 }
@@ -87,101 +97,103 @@ ul {
 	list-style-type: none;
 }
 
-.footer{
-color: black;
+.footer {
+	color: black;
+	text-shadow: 0 0 7px black;
 }
 
 .col-md-3 {
-text-shadow: 0 0 7px black;
+	text-shadow: 0 0 7px black;
 }
 
 .error {
-color: red;
+	color: red;
 }
 
-.col-sm-3{
-margin: 15px 0;
+.col-sm-3 {
+	margin: 15px 0;
 }
 
 .register {
-float: right;
-margin-right: 5px;
+	float: right;
+	margin-right: 5px;
 }
 
- .register:link {
-color: white;
-}
+	.register:link {
+		color: white;
+	}
 
-.register:visited {
-color: lightgreen;
-}
+	.register:visited {
+		color: lightgreen;
+	}
 
 /*__________Registration formatting___________*/
 
 form {
-    margin: 10px;
-    text-shadow: 0px 0px 10px black;
+	margin: 10px auto;
+	text-shadow: 0px 0px 10px black;
 }
 
 fieldset {
-    margin: 5px;
-    border-color: black;
+	margin: 5px;
+	border-color: black;
 }
 
 legend {
-    color: white;
+	color: white;
 }
 
 label {
-    display: inline-block;
-    width: 100px;
+	display: inline-block;
+	width: 100px;
 }
 
 input {
-    border: solid 1px black;
-    border-radius: 7px;
-    width: 200px;
-    padding: 2px 5px;
-    color: black;
+	border: solid 1px black;
+	border-radius: 7px;
+	width: 200px;
+	padding: 2px 5px;
+	color: black;
 }
 
 .checklabel {
-    font-size: 90%;
-    width: 195px;
+	font-size: 90%;
+	width: 195px;
 }
 
 #price {
-    width: 280px;
+	width: 280px;
 }
 
 select {
-    border: solid 1px black;
-    border-radius: 7px;
-    padding: 2px 5px;
+	border: solid 1px black;
+	border-radius: 7px;
+	padding: 2px 5px;
 }
 
 .ui-datepicker {
-    background: black;
-    border: 1px solid #555;
-    color: darkblue;
-    background-color: black;
-    box-shadow: 5px 5px 5px black;
-    padding: 3px 5px;
-    border-radius: 10px;
+	background: black;
+	border: 1px solid #555;
+	color: darkblue;
+	background-color: black;
+	box-shadow: 5px 5px 5px black;
+	padding: 3px 5px;
+	border-radius: 10px;
 }
 
 .footnote {
-    font-size: 75%;
+	font-size: 75%;
 }
 
 .formbutton {
-    background-color: black;
-    border-color: dimgrey;
-    color: white;
-    box-shadow: 0px 0px 7px 3px black;
-    margin: 5px 10px 20px 10px;
+	background-color: black;
+	border-color: dimgrey;
+	color: white;
+	box-shadow: 0px 0px 7px 3px black;
+	margin: 5px 10px 20px 10px;
 }
 
-#cardCarrier{
-    color: black;
+#cardCarrier {
+	color: black;
+	width: 200px;
 }

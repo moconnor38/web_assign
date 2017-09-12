@@ -8,7 +8,7 @@ namespace SampleTemplate.Controllers
 {
     public class RegisterController : Controller
     {
-        // GET: Courses
+        // GET:
         public ActionResult Index()
         {
             return View();
