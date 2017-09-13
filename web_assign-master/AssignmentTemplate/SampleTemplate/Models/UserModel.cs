@@ -17,12 +17,15 @@ namespace SampleTemplate.Models
         [Required]
         [RegularExpression("[A-Za-z]+")]
         public string LastName { get; set; }
-        
-        //add username UNIQUE
 
+        [Display(Name = "Username")]
+        [Required]
+        [RegularExpression("[A-Za-z]+")]
+        public string username { get; set; }
+        
         [Required]
         [EmailAddress]
-        public string Email { get; set; } //also unique
+        public string Email { get; set; }
 
         [Required]
         [StringLength(15, ErrorMessage =

@@ -1,0 +1,26 @@
+﻿@model IEnumerable<SampleTemplate.Models.Game>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";}
+
+<h2>See below for more detailed information</h2>
+<section>
+    <div class="row">
+        @foreach (var game in Model)
+
+        {
+            <div class="col-sm-3">
+                <img src="~/Content/Images/@.GameImage" alt="@game.Title" />
+                <p> @game.Title</p>
+                <p> Publisher: @game.Publisher</p>
+                @*<p> &euro;@game.Price</p>*@
+                <p> Developed by: @game.Developer</p>
+                <p> Genre: @game.Genre</p>
+                <p>
+                    @Html.ActionLink("Download", "Index", "Register", null, new { @class = "btn btn-primary btn-small" })
+                </p>
+
+            </div>}
+    </div>
+</section>
+
