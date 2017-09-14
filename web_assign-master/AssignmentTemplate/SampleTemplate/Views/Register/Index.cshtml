@@ -3,19 +3,7 @@
 @{
     ViewBag.Title = "Index";
 }
-<head>
-    <link rel="stylesheet" href="@Url.Content("~/Content/themes/base/styles.css")" type="text/css" />
-    <link rel="stylesheet" href="@Url.Content("//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css")" type="text/css" />
-    <link rel="stylesheet" href="@Url.Content("/resources/demos/style.css")" type="text/css" />
-    <script src="@Url.Content("https://code.jquery.com/jquery-1.12.4.js")" type="text/javascript"></script>
-    <script src="@Url.Content("https://code.jquery.com/ui/1.12.1/jquery-ui.js")" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(function () {
-            $(".datepicker").datepicker({ minDate: 0 });
-        });
-    </script>
-</head>
-<body>
+
     <h3>Fill out this quick form below to begin your gaming experience!</h3>
     @using (Html.BeginForm("Register", "User", FormMethod.Post))
     {
@@ -23,27 +11,22 @@
         <p>
             @Html.LabelFor(u => u.FirstName)
             @Html.TextBoxFor(u => u.FirstName)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.LastName)
             @Html.TextBoxFor(u => u.LastName)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.Email)
             @Html.TextBoxFor(u => u.Email)
-            *
         </p>
 		<p>
 			@Html.LabelFor(u => u.Username)
 			@Html.TextBoxFor(u => u.Username)
-			*
 		</p>
         <p>
             @Html.LabelFor(u => u.Password)
             @Html.PasswordFor(u => u.Password)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.ComparePassword)
@@ -73,4 +56,3 @@
         <input class="formbutton" type="reset" name="resetRegister" onclick="return confirmReset();" value="Reset all fields to default" />
         @*</p>*@
     }
-</body>
