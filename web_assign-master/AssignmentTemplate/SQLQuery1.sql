@@ -1,1 +1,1 @@
-﻿EXEC uspCreateMemberTable1
+﻿EXEC uspCreateGameTable
