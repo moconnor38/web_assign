@@ -37,5 +37,48 @@ namespace SampleTemplate.Controllers
             }
             return View(user);
         }
+
+        [HttpGet]
+        public ActionResult Login()
+        {
+            return View();
+
+        }
+
+        [HttpPost]
+        public ActionResult Login(UserModel user)
+        {
+            ModelState.Remove("FirstName");
+            ModelState.Remove("LastName");
+            ModelState.Remove("ComparePassword");
+
+            if (ModelState.IsValid)
+            {
+                user.FirstName = dao.CheckLogin(user);
+                if (user.FirstName != null)
+                {
+                    Session["name"] = user.FirstName;
+                    Session["email"] = user.Email;
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ViewBag.Status = "Error! " + dao.message;
+                    return View("Status");
+                }
+            
+            }
+            else
+            {
+                return View(user);
+            }
+        }
+
+        public ActionResult LogOut()
+        {
+            Session.Clear();
+            Session.Abandon();
+            return View("../Home/Index");
+        }
     }
 }

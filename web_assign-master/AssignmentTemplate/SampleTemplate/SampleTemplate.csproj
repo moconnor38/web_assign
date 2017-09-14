@@ -167,6 +167,7 @@
     <Content Include="Views\RSS\Index.cshtml" />
     <Content Include="Views\GameInfo\Index.cshtml" />
     <Content Include="Views\User\Status.cshtml" />
+    <Content Include="Views\User\Login.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

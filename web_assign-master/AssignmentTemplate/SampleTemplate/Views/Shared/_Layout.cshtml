@@ -60,7 +60,9 @@
 			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
 		</div>*@
         <main>
+			@RenderPage("LoginRegister.cshtml")
 
+			@RenderSection("Logged", false)
             @RenderBody()
         </main>
         <footer>
