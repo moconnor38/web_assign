@@ -123,7 +123,7 @@ namespace SampleTemplate.Models
                     game.GameImage = reader["GameImage"].ToString();
                     game.Publisher = reader["Publisher"].ToString();
                     game.Title = reader["Title"].ToString();
-                    game.Price = decimal.Parse(reader["Price"].ToString());
+                    //game.Price = decimal.Parse(reader["Price"].ToString());
                     game.Genre = reader["Genre"].ToString();
                     gamelist.Add(game);
                 }
