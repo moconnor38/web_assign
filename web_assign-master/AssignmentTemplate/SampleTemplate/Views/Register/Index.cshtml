@@ -35,6 +35,11 @@
             @Html.TextBoxFor(u => u.Email)
             *
         </p>
+		<p>
+			@Html.LabelFor(u => u.Username)
+			@Html.TextBoxFor(u => u.Username)
+			*
+		</p>
         <p>
             @Html.LabelFor(u => u.Password)
             @Html.PasswordFor(u => u.Password)
@@ -43,9 +48,9 @@
         <p>
             @Html.LabelFor(u => u.ComparePassword)
             @Html.PasswordFor(u => u.ComparePassword)
-            *
-        </p>
-        <p>
+          </p>  
+
+        @*<p>
             <fieldset name="payment">
                 <legend><b>Payment info:</b></legend>
                 <label for="cardCarrier">Card carrier:</label>
@@ -61,11 +66,11 @@
                 <input type="text" size="30" placeholder="000" name="security" id="security" required>*&nbsp;<br>
                 <label for="expiry">Expiry date:</label>
                 <input type="text" size="30" placeholder="MM/YYYY" name="expiry" id="expiry" class="datepicker" required>*<br>
-            </fieldset>
+            </fieldset>*@
 
-        <p class="footnote">* Fields marked with an asterisk are required.</p>
+        @*<p class="footnote">* Fields marked with an asterisk are required.</p>*@
         <input class="formbutton" type="submit" value="Register" />
         <input class="formbutton" type="reset" name="resetRegister" onclick="return confirmReset();" value="Reset all fields to default" />
-        </p>
+        @*</p>*@
     }
 </body>

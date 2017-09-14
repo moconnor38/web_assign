@@ -21,7 +21,7 @@ namespace SampleTemplate.Models
         [Display(Name = "Username")]
         [Required]
         [RegularExpression("[A-Za-z]+")]
-        public string username { get; set; }
+        public string Username { get; set; }
         
         [Required]
         [EmailAddress]
@@ -38,5 +38,7 @@ namespace SampleTemplate.Models
         [StringLength(15, ErrorMessage = "Password entered must be 6-15 characters long",
             MinimumLength =6)]
         public string ComparePassword { get; set; }
+
+        public DateTime RenewDate { get; set; }
     }
 }
