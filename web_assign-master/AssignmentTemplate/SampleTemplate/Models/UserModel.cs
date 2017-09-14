@@ -19,7 +19,7 @@ namespace SampleTemplate.Models
         public string LastName { get; set; }
 
         [Display(Name = "Username")]
-        [Required]
+        //[Required]
         [RegularExpression("[A-Za-z]+")]
         public string Username { get; set; }
         
@@ -39,6 +39,5 @@ namespace SampleTemplate.Models
             MinimumLength =6)]
         public string ComparePassword { get; set; }
 
-        public DateTime RenewDate { get; set; }
     }
 }
