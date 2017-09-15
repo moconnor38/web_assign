@@ -1,7 +1,32 @@
-﻿
+﻿@*Centre-align all the forms*@
+@model IEnumerable<SampleTemplate.Models.Feedback>
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Contact Us</h2>
+<h4>Your feedback to date:</h4>
+<section id="feedbacks">   
+    <div class="feedback" id="feedbackHeader">
+        <ol>
+            <li>Date Submitted</li>
+            <li>Content</li>
+            <li>Read</li>
+        </ol>
+    </div>
+    @foreach (var feedback in Model)
+    {
+        <div class="feedback">
+            <ol>
+                <li>@feedback.TimeSubmitted</li>
+                <li>@feedback.Content</li>
+                <li>@feedback.Read.ToString()</li>
+            </ol>
+        </div>
+    }
+</section>
+<section id="feedbacksubmission">
+    <form>
 
+    </form>
+</section>
