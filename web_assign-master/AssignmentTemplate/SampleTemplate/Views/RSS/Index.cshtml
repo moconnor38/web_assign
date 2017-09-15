@@ -3,15 +3,7 @@
 	Layout = null;
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-	<meta name="viewport" content="width=device-width" />
-	<title>Index</title>
-</head>
-<body>
-	<div style="width: 80%; background-color:transparent;height:500px;overflow:scroll">
+	<div id="rss1">
 		<h2>@ViewBag.Title</h2>
 		@foreach (XmlNode node in (XmlNodeList)ViewBag.List)
 		{
@@ -22,5 +14,3 @@
 			}
 		}
 	</div>
-</body>
-</html>
