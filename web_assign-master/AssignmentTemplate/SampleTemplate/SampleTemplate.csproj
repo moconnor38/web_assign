@@ -93,6 +93,7 @@
     <Content Include="App_Data\CAData_log.ldf">
       <DependentUpon>CAData.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\specs.xml" />
     <Content Include="Content\Images\Adam.jpg" />
     <Content Include="Content\Images\blocks_background.jpg" />
     <Content Include="Content\Images\blue_background.jpg" />
@@ -143,12 +144,14 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RSSController.cs" />
     <Compile Include="Controllers\SignInController.cs" />
+    <Compile Include="Controllers\SystemSpecController.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DAO.cs" />
     <Compile Include="Models\Game.cs" />
+    <Compile Include="Models\Systemreqs.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -168,6 +171,7 @@
     <Content Include="Views\GameInfo\Index.cshtml" />
     <Content Include="Views\User\Status.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
+    <Content Include="Views\SystemSpec\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
