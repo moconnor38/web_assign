@@ -5,7 +5,7 @@
     background-image: url(Images/blocks_background.jpg);
     opacity: 0.9;
     color: white;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 3px black;
 }
 
 .legibility {
@@ -32,6 +32,12 @@ main {
     height: auto;
 }
 
+main a {
+    color:black;
+    text-shadow: 0px 0px 3px cyan;
+    text-decoration: underline;
+}
+
 header {
     background-image: url(Images/blue_background.jpg);
     height: 100px;
@@ -51,6 +57,12 @@ nav {
     text-shadow: none;
     margin: -10px -3px 0px -3px;
 }
+
+/*@media only screen and (max-width: 500px) {
+    body {
+        background-color: lightblue;
+    }
+}*/
 
 .div{
     height:inherit;
@@ -109,7 +121,7 @@ nav {
 
 .col-sm-4 {
     box-shadow: 0 0 5px 5px black;
-    background-color:transparent;
+    background-color:dimgrey;
     padding: 10px;
     border-radius: 10px;
     height: 50%;
@@ -123,6 +135,16 @@ nav {
     height:100%;
     max-height:345px;
     overflow:scroll;
+}
+#rss1 a {
+    color:steelblue;
+    text-shadow: 0 0 3px black;
+    text-decoration: none;
+}
+#rss1 a:hover {
+    color: steelblue;
+    text-shadow: 0 0 3px black;
+    text-decoration: underline;
 }
 
 ul {
@@ -228,6 +250,7 @@ select {
     border-color: dimgrey;
     color: white;
     box-shadow: 0px 0px 7px 3px black;
+    text-shadow: 0 0 3px cyan;
     margin: 5px 10px 20px 10px;
 }
 

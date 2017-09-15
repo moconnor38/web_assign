@@ -4,34 +4,29 @@
     ViewBag.Title = "Index";
 }
 
-    <h3>Fill out this quick form below to begin your gaming experience!</h3>
+    <h2>Enter your details below to begin your gaming experience!</h2>
     @using (Html.BeginForm("Register", "User", FormMethod.Post))
     {
         @Html.ValidationSummary(false, "", new { @class = "error" })
         <p>
             @Html.LabelFor(u => u.FirstName)
             @Html.TextBoxFor(u => u.FirstName)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.LastName)
             @Html.TextBoxFor(u => u.LastName)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.Email)
             @Html.TextBoxFor(u => u.Email)
-            *
         </p>
 		<p>
 			@Html.LabelFor(u => u.Username)
 			@Html.TextBoxFor(u => u.Username)
-			*
 		</p>
         <p>
             @Html.LabelFor(u => u.Password)
             @Html.PasswordFor(u => u.Password)
-            *
         </p>
         <p>
             @Html.LabelFor(u => u.ComparePassword)

@@ -28,7 +28,8 @@
             <h2><em>Force Gaming</em></h2>
         </header>
 		@* bootstrap.com *@
-		<nav class="navbar navbar-default -dark bg-dark" >
+		
+        <nav class="navbar navbar-default -dark bg-dark" >
 			<div class="container-fluid">
 
 				<ul class="nav navbar-nav">
@@ -86,7 +87,7 @@
 					<div class="col-lg-12">
 						<div class="col-md-3">
 							<ul>
-								<li><a href="#">About us</a></li>
+                                <li>@Html.ActionLink("About Us", "Index", "About")</li>
 								<li><a href="#">Blog</a></li>
 							</ul>
 						</div>
