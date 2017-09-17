@@ -109,7 +109,7 @@ namespace SampleTemplate.Models
             SqlDataReader reader;
             //Calling connection method to establish connection string
             Connection();
-            cmd = new SqlCommand("uspAllGames", conn);
+            cmd = new SqlCommand("uspAllGames1", conn);
             cmd.CommandType = CommandType.StoredProcedure;
             try
             {
@@ -118,12 +118,49 @@ namespace SampleTemplate.Models
                 while (reader.Read())
                 {
                     Game game = new Game();
-                    game.DatePublished = DateTime.Parse(reader["DatePublished"].ToString());
+                    game.Title = reader["GameName"].ToString();
+                    //game.Developer = reader["Developer"].ToString();
+                    game.Genre = reader["Genre"].ToString();
+                    game.Publisher = reader["Publisher"].ToString();
+                    game.GameImage = reader["GameImage"].ToString();
+                    game.DatePublished = DateTime.Parse(reader["DateReleased"].ToString());
+                    
+                    gamelist.Add(game);
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return gamelist;
+        }
+
+
+        public List<Game> ShowAllGames1()
+        {
+            List<Game> gamelist = new List<Game>();
+            SqlCommand cmd;
+            SqlDataReader reader;
+            //Calling connection method to establish connection string
+            Connection();
+            cmd = new SqlCommand("SELECT * FROM Game1", conn);
+            //cmd.CommandType = CommandType.StoredProcedure;
+            try
+            {
+                conn.Open();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Game game = new Game();
+                    game.DatePublished = DateTime.Parse(reader["DateReleased"].ToString());
                     game.Developer = reader["Developer"].ToString();
                     game.GameImage = reader["GameImage"].ToString();
                     game.Publisher = reader["Publisher"].ToString();
-                    game.Title = reader["Title"].ToString();
-                    //game.Price = decimal.Parse(reader["Price"].ToString());
+                    game.Title = reader["GameName"].ToString();
                     game.Genre = reader["Genre"].ToString();
                     gamelist.Add(game);
                 }
@@ -137,8 +174,95 @@ namespace SampleTemplate.Models
                 conn.Close();
             }
             return gamelist;
-        }        
+        }
+
+
+        public List<Game> BrowseByGenre(string genre)
+        {
+            List<Game> gameList = new List<Game>();
+
+            int count = 0;
+
+            SqlDataReader reader;
+            Connection();
+            SqlCommand cmd = new SqlCommand("uspBrowseGames", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Genre", genre);
+            try
+            {
+                conn.Open();
+                count = cmd.ExecuteNonQuery();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Game game = new Game();
+
+                    game.Title = reader["GameName"].ToString();
+                    //game.Developer = reader["Developer"].ToString();
+                    game.Genre = reader["Genre"].ToString();
+                    game.Publisher = reader["Publisher"].ToString();
+                    game.GameImage = reader["GameImage"].ToString();
+                    game.DatePublished = DateTime.Parse(reader["DateReleased"].ToString());
+
+                    gameList.Add(game);
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return gameList;
+        }
+
+
+
+        public List<Game> SearchGame(string search)
+        {
+            List<Game> gameList = new List<Game>();
+
+            int count = 0;
+
+            SqlDataReader reader;
+            Connection();
+            SqlCommand cmd = new SqlCommand("uspSearch", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Search", search);
+            try
+            {
+                conn.Open();
+                count = cmd.ExecuteNonQuery();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Game game = new Game();
+
+                    game.Title = reader["GameName"].ToString();
+                    //game.Developer = reader["Developer"].ToString();
+                    game.Genre = reader["Genre"].ToString();
+                    game.Publisher = reader["Publisher"].ToString();
+                    game.GameImage = reader["GameImage"].ToString();
+                    game.DatePublished = DateTime.Parse(reader["DateReleased"].ToString());
+
+                    gameList.Add(game);
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return gameList;
+        }
+
+
         #endregion
-        
+
     }
 }

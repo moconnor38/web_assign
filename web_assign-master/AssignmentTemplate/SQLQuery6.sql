@@ -1,10 +1,4 @@
-﻿USE [C:\USERS\MARKO\WEB_ASSIGN\WEB_ASSIGN-MASTER\ASSIGNMENTTEMPLATE\SAMPLETEMPLATE\APP_DATA\CADATA.MDF]
-GO
+﻿INSERT INTO GAME1 (GameName, DeveloperID, Genre, Publisher, GameImage, RequiredSpec, DateReleased)
+VALUES ('Prey', 1, 'RPG', 'Bethesda', 'PreySmall.jpg', NULL, '2017-12-03')
 
-DECLARE	@return_value Int
 
-EXEC	@return_value = [dbo].[uspCreateLibraryEntryTable]
-
-SELECT	@return_value as 'Return Value'
-
-GO

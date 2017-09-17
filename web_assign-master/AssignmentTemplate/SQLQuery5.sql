@@ -1,1 +1,3 @@
-﻿EXEC uspCreateLibraryEntryTable
+﻿CREATE PROC uspAllGames1
+AS
+SELECT * FROM Game1
