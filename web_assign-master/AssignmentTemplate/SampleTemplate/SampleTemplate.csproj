@@ -150,6 +150,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\DAO.cs" />
+    <Compile Include="Models\Feedback.cs" />
     <Compile Include="Models\Game.cs" />
     <Compile Include="Models\Systemreqs.cs" />
     <Compile Include="Models\UserModel.cs" />

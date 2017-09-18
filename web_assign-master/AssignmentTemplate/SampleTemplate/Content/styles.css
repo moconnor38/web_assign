@@ -131,7 +131,7 @@ nav {
 
 #rss1 {  
     width: 100%;
-    background-color:transparent;
+    background-color:dimgrey;
     height:100%;
     max-height:345px;
     overflow:scroll;
@@ -186,6 +186,31 @@ footer a {
     .register:visited {
         color: lightgreen;
     }
+
+
+/*__________Contact Us Formatting__________*/
+#feedbacks {
+    background-color: dimgrey;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+#feedbackHeader li {
+    color: black;
+    text-decoration-line: underline;
+}
+
+.feedback li {
+    display: inline-block;
+    text-align: left;
+    padding-left: 5%;
+    width: 33%;
+    list-style-type: disc;
+    overflow: hidden;
+    height: 20px;
+}
+
+
 
 /*__________Registration formatting___________*/
 
