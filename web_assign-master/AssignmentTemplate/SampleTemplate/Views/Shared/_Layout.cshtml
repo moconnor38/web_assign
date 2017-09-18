@@ -44,13 +44,19 @@
 						</a>
 						<ul class="dropdown-menu">
 
-	@*@Ajax.ActionLink*@
 							
 							<li>@Html.ActionLink("All", "Index", "Games")</li>
 							<li>@Html.ActionLink("Action", "Browse", "Games", new { genre = "Action" }, null)</li>  @*, *@
 							<li>@Html.ActionLink("RPG", "Browse", "Games", new { genre = "RPG" }, null)</li>
 							<li>@Html.ActionLink("Strategy", "Browse", "Games", new { genre = "Strategy" }, null)</li>
 						</ul>
+
+						@using (Html.BeginForm("Search", "Games"))
+						{
+							<input type="text" name="Search" />
+							<input type="submit" />
+						}
+
 
 					</li>
 					<li>@Html.ActionLink("About Us", "Index", "About")</li>

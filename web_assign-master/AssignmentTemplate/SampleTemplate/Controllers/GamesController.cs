@@ -44,5 +44,13 @@ namespace SampleTemplate.Controllers
             return View("~/Views/Games/Index.cshtml", list);
         }
 
+        [HttpPost]
+        public ActionResult Search(string search)
+        {
+            List<Game> genreList = dao.SearchGame(search);
+
+            return View("~/Views/Games/Index.cshtml", genreList);
+        }
+
     }
 }
