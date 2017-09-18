@@ -35,7 +35,7 @@ namespace SampleTemplate.Models
             cmd.Parameters.AddWithValue("@last", user.LastName);
             cmd.Parameters.AddWithValue("@email", user.Email);
             cmd.Parameters.AddWithValue("@user", user.Username);
-            cmd.Parameters.AddWithValue("@renew", DateTime.Now.AddDays(30));
+            cmd.Parameters.AddWithValue("@renew", user.Renew.ToString());
             password = Crypto.HashPassword(user.Password);
             message = password;
             cmd.Parameters.AddWithValue("@pass", password);
