@@ -39,5 +39,7 @@ namespace SampleTemplate.Models
             MinimumLength =6)]
         public string ComparePassword { get; set; }
 
+        public DateTime Renew = DateTime.Now.AddDays(30);
+        
     }
 }

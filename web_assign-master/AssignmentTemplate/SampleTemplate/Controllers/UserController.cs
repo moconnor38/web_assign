@@ -57,8 +57,8 @@ namespace SampleTemplate.Controllers
                 user.FirstName = dao.CheckLogin(user);
                 if (user.FirstName != null)
                 {
-                    Session["name"] = user.FirstName;
-                    Session["email"] = user.Email;
+                    Session["username"] = user.Username;
+                    Session["renew"] = user.Renew;
                     return RedirectToAction("Index", "Home");
                 }
                 else
