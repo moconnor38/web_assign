@@ -26,5 +26,21 @@
     }
 </section>
 <section id="feedbacksubmission">
-    <form></form>
+    <form>
+        <h4>Submit New Feedback:</h4>
+        <p>Please enter your email address below if you'd like us to get back to you about your feedback:</p>
+
+        <p>
+            @Html.Label("Email", "Email")
+            @Html.TextBox("Email")
+        </p>
+        <p>
+            @Html.Label("Content", "Content")
+            @Html.TextBox("Content")
+        </p>
+
+        <input class="formbutton" type="submit" value="Submit Feedback" />
+        <input class="formbutton" type="reset" name="resetRegister" onclick="return confirmReset();" value="Reset to Default" />
+
+    </form>
 </section>

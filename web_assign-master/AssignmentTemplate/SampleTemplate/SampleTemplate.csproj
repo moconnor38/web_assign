@@ -93,6 +93,7 @@
     <Content Include="App_Data\CAData_log.ldf">
       <DependentUpon>CAData.mdf</DependentUpon>
     </Content>
+    <Content Include="App_Data\Feedback.xml" />
     <Content Include="App_Data\specs.xml" />
     <Content Include="Content\Images\Adam.jpg" />
     <Content Include="Content\Images\blocks_background.jpg" />
