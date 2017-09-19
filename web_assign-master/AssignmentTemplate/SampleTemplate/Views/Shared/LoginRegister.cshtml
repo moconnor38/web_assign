@@ -1,6 +1,6 @@
-﻿@if (Session["username"] != null)
+﻿@if (Session["name"] != null)
 {
-    <span>@Session["username"], you are logged in</span>
+    <span>@Session["name"], you are logged in</span>
 	<span>Membership expires on @Session["renew"]</span>
     @Html.ActionLink("Logout", "LogOut", "User", null, new { @class = "register" })
 }
