@@ -62,15 +62,14 @@
 				</ul>
 
 				
-				@*<form class="form-inline">*@
+				<form class="form-inline">
 					@using (Html.BeginForm("Search", "Games"))
 					{
-						<input type="text" name="Search" />
-							<input type="submit" />
+						<input type="text" name="Search" placeholder="Search Games"/>
+							<input type="submit" value="Search" />
 					}
-					@*<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>*@
-				@*</form>*@
+
+				</form>
 			</div>
 		</nav>
 		
