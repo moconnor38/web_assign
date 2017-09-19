@@ -62,14 +62,14 @@
 				</ul>
 
 				
-				<form class="form-inline">
-					@using (Html.BeginForm("Search", "Games"))
+				@*<form class="form-inline">*@
+					@using (Html.BeginForm("Search", "Games", new {@class ="form-inline"}))
 					{
 						<input type="text" name="Search" placeholder="Search Games"/>
 							<input type="submit" value="Search" />
 					}
 
-				</form>
+				@*</form>*@
 			</div>
 		</nav>
 		
