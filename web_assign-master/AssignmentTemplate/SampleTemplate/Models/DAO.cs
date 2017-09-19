@@ -99,6 +99,39 @@ namespace SampleTemplate.Models
 
             return firstName;
         }
+
+
+        public int AddToLibrary(string email, string gamename)
+        {
+            int count = 0;
+            SqlCommand cmd;
+
+            Connection();
+
+            cmd = new SqlCommand("uspInsertGameIntoMemberLibrary", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@email", email);
+            cmd.Parameters.AddWithValue("@gamename", gamename);
+
+
+            try
+            {
+                conn.Open();
+                count = cmd.ExecuteNonQuery();
+            }
+            catch (SqlException ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+
+            return count;
+        }
+
+
         #endregion
 
         #region Games

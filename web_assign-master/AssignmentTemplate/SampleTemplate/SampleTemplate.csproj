@@ -141,6 +141,7 @@
     <Compile Include="Controllers\GameInfoController.cs" />
     <Compile Include="Controllers\GamesController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\MemberPageController.cs" />
     <Compile Include="Controllers\RegisterController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\RSSController.cs" />
@@ -174,6 +175,7 @@
     <Content Include="Views\User\Status.cshtml" />
     <Content Include="Views\User\Login.cshtml" />
     <Content Include="Views\SystemSpec\Index.cshtml" />
+    <Content Include="Views\MemberPage\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
