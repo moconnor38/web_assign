@@ -51,11 +51,7 @@
 							<li>@Html.ActionLink("Strategy", "Browse", "Games", new { genre = "Strategy" }, null)</li>
 						</ul>
 
-						@using (Html.BeginForm("Search", "Games"))
-						{
-							<input type="text" name="Search" />
-							<input type="submit" />
-						}
+
 
 
 					</li>
@@ -66,20 +62,19 @@
 				</ul>
 
 				
-				<form class="form-inline">
-					<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
-					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-				</form>
+				@*<form class="form-inline">*@
+					@using (Html.BeginForm("Search", "Games"))
+					{
+						<input type="text" name="Search" />
+							<input type="submit" />
+					}
+					@*<input class="form-control mr-sm-2" type="text" placeholder="Search Games" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>*@
+				@*</form>*@
 			</div>
 		</nav>
 		
-		@*<div class="row">
-			<p>Featured Games</p>
-			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-			<div class="col-sm-3"><img src="~/Content/Images/smallgame.jpg" /></div>
-		</div>*@
+
         <main>
             <div class="legibility"></div>  
             @RenderPage("LoginRegister.cshtml")
