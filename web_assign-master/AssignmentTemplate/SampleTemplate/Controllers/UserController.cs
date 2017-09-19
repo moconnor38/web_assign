@@ -60,6 +60,7 @@ namespace SampleTemplate.Controllers
                     Session["name"] = user.FirstName;
                     Session["username"] = user.Username;
                     Session["renew"] = user.Renew;
+                    Session["email"] = user.Email;
                     return RedirectToAction("Index", "Home");
                 }
                 else

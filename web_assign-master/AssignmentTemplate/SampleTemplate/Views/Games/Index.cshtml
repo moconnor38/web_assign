@@ -13,29 +13,13 @@
                 <img src="~/Content/Images/@game.GameImage" alt="@game.Title" />
                 <p> @game.Title</p>
                 <p> Publisher: @game.Publisher</p>
-                @*<p> &euro;@game.Price</p>*@
                 <p> Developed by: @game.Developer</p>
                 <p> Genre: @game.Genre</p>
 		<p>
-		@*	@Html.ActionLink("View System Requirements", "Index", "SystemSpec", null, new { @class = "btn btn-primary btn-small" })*@
-		</p>
-                 
+             @Html.ActionLink("Add to Library", "AddToLibrary", "MemberPage", new { email = Session["email"], gamename = game.Title }, null)   
+		</p>                 
             </div>}
     </div>
 </section>
 
-
-
-@*@foreach (var game in Model)
-{
-	<section>
-		<img alt="@game.Title" src="~/Content/Images/smallgame.jpg" width="100" height="100" />
-		<h4>
-			@game.Title<br />
-			Developer: @game.Developer
-		</h4>
-		<h4>Price: &euro;@game.Price</h4>
-		<hr />
-	</section>
-}*@
-
+}
