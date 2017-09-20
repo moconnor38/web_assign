@@ -57,8 +57,11 @@
 					</li>
 					<li>@Html.ActionLink("About Us", "Index", "About")</li>
 					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
+					@if (Session["name"] == null)
+					{
 					<li>@Html.ActionLink("Log In", "Index", "SignIn")</li>
 					<li>@Html.ActionLink("Register", "Index", "Register")</li>
+					}
 					@if (Session["name"] != null)
 					{
 						<li>
