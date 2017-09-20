@@ -131,6 +131,38 @@ namespace SampleTemplate.Models
             return count;
         }
 
+        public List<Game> ShowLibraryGames(string email)
+        {
+            List<Game> gamelist = new List<Game>();
+            SqlCommand cmd;
+            SqlDataReader reader;
+            //Calling connection method to establish connection string
+            Connection();
+            cmd = new SqlCommand("uspDisplayMemberLibrary", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@email", email);
+            try
+            {
+                conn.Open();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Game game = new Game();
+                    game.Title = reader["GameName"].ToString();
+
+                    gamelist.Add(game);
+                }
+            }
+            catch (SqlException ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return gamelist;
+        }
 
         #endregion
 

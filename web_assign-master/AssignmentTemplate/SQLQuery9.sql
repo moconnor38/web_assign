@@ -1,1 +1,0 @@
-﻿CREATE PROC uspCreateDeveloperTable1

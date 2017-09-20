@@ -1,8 +1,20 @@
-﻿
+﻿@model IEnumerable<SampleTemplate.Models.Game>
 @{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+	ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Games available for download</h2>
+<section>
+	<div class="row">
+		@foreach (var game in Model)
+
+		{
+			<div class="col-sm-3">
+				@*<img src="~/Content/Images/@game.GameImage" alt="@game.Title" />*@
+				<p> @game.Title</p>
+
+
+			</div>}
+	</div>
+</section>
 
