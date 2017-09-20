@@ -164,6 +164,47 @@ namespace SampleTemplate.Models
             return gamelist;
         }
 
+        public List<UserModel> SearchMember(string search)
+        {
+            List<UserModel> userList = new List<UserModel>();
+
+            int count = 0;
+
+            SqlDataReader reader;
+            Connection();
+            SqlCommand cmd = new SqlCommand("uspSearchMember", conn);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@Search", search);
+            try
+            {
+                conn.Open();
+                count = cmd.ExecuteNonQuery();
+                reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    UserModel user = new UserModel();
+
+                    user.Username = reader["UserName"].ToString();
+                    //game.Developer = reader["Developer"].ToString();
+                    //game.Genre = reader["Genre"].ToString();
+                    //game.Publisher = reader["Publisher"].ToString();
+                    //game.GameImage = reader["GameImage"].ToString();
+                    //game.DatePublished = DateTime.Parse(reader["DateReleased"].ToString());
+
+                    userList.Add(user);
+                }
+            }
+            catch (Exception ex)
+            {
+                message = ex.Message;
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return userList;
+        }
+
         #endregion
 
         #region Games

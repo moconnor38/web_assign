@@ -29,5 +29,13 @@ namespace SampleTemplate.Controllers
 
             return View("~/Views/MemberPage/Index.cshtml", libraryList);
         }
+
+       [HttpPost]
+        public ActionResult SearchMember(string search)
+        {
+            List<UserModel> userList = dao.SearchMember(search);
+
+            return View("~/Views/MemberPage/FriendView.cshtml", userList);
+        }
     }
 }

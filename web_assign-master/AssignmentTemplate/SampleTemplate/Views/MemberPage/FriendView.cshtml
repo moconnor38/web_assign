@@ -1,0 +1,16 @@
+﻿@model IEnumerable<SampleTemplate.Models.UserModel>
+@{
+	Layout = null;
+}
+
+<div>
+
+	@foreach (var user in Model)
+
+	{
+		<div class="col-sm-3">
+			<p> @user.Username</p>
+
+		</div>}
+</div>
+
