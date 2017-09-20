@@ -1,5 +1,4 @@
-﻿CREATE PROC uspDisplayMemberLibrary
-@email nvarchar(100)
+﻿CREATE PROC uspSearch @Search varchar(30)
 AS
-SELECT GAMENAME FROM MemberLibrary1
-WHERE Email= @email
+Select * from Game1 
+where GameName like '%' + @Search + '%'
