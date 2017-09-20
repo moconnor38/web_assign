@@ -7,9 +7,9 @@
 <h2>Account Information</h2>
 <section>
 	<span>Membership expires on @Session["renew"]</span>
+	<p>@Html.ActionLink("Display Your Game Library", "DisplayLibraryGames", "MemberPage", new { email = Session["email"] }, null)</p>
 	<div class="row">
-		@Html.ActionLink("Display Library", "DisplayLibraryGames", "MemberPage", new { email = Session["email"] }, null)
-
+		
 		@if (Model != null)
 		{
 
@@ -21,7 +21,6 @@
 					<p> @game.Title</p>
 
 				</div>}
-
 		}
 
 		@using (Ajax.BeginForm("SearchMember", "MemberPage",

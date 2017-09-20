@@ -19,7 +19,7 @@ namespace SampleTemplate.Controllers
         public ActionResult AddToLibrary(string email, string gamename)
         {
             dao.AddToLibrary(email, gamename);
-            return View("~/Views/Home/Index.cshtml");
+            return View("~/Views/MemberPage/Index.cshtml");
         }
 
         public ActionResult DisplayLibraryGames(string email)
