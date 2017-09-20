@@ -3,18 +3,28 @@
 	ViewBag.Title = "Index";
 }
 
-<h2>Games available for download</h2>
+<h2>Account Information</h2>
 <section>
+	<span>Membership expires on @Session["renew"]</span>
 	<div class="row">
-		@foreach (var game in Model)
+		@Html.ActionLink("Display Library", "DisplayLibraryGames", "MemberPage", new { email = Session["email"] }, null)
 
+		@if (Model != null)
 		{
-			<div class="col-sm-3">
-				@*<img src="~/Content/Images/@game.GameImage" alt="@game.Title" />*@
-				<p> @game.Title</p>
+
+			foreach (var game in Model)
+
+			{
+				<div class="col-sm-3">
+					@*<img src="~/Content/Images/@game.GameImage" alt="@game.Title" />*@
+					<p> @game.Title</p>
+
+				</div>}
+
+		}
 
 
-			</div>}
-	</div>
+			</div>
+
 </section>
 

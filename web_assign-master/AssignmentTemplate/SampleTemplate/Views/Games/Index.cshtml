@@ -17,7 +17,7 @@
                 <p> Genre: @game.Genre</p>
 		<p>
              @Html.ActionLink("Add to Library", "AddToLibrary", "MemberPage", new { email = Session["email"], gamename = game.Title }, null) 
-			@Html.ActionLink("Display Library", "DisplayLibraryGames", "MemberPage", new { email = Session["email"] }, null)
+
 		</p>                 
             </div>}
     </div>
