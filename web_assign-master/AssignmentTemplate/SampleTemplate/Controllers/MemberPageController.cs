@@ -16,11 +16,18 @@ namespace SampleTemplate.Controllers
             return View();
         }
 
-
         public ActionResult AddToLibrary(string email, string gamename)
         {
             dao.AddToLibrary(email, gamename);
             return View("~/Views/Home/Index.cshtml");
+        }
+
+        public ActionResult DisplayLibraryGames(string email)
+        {
+
+            List<Game> libraryList = dao.ShowLibraryGames(email);
+
+            return View("~/Views/MemberPage/Index.cshtml", libraryList);
         }
     }
 }
