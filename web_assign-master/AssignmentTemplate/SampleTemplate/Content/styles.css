@@ -310,19 +310,30 @@ select {
     margin-right: 10%;
 }
 
-.librarydiv{
-    background-color:dimgrey;
+#librow {
+    background-color: dimgrey;
     text-align: center;
-    border-radius:5px;
-    padding: 5px;
+    border-radius: 5px;
+    padding: 2%;
     margin: 5%;
+    box-shadow: 0 0 5px 5px black;
 }
 
-.librarygame{
+.libraryitem{
     background-color:steelblue;
     text-align:center;
     padding:5px;
     border-radius:5px;
     box-shadow:0 0 5px 5px black;
     color:black;
+}
+
+#librarygames{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#friends{
+    color:black;
+    text-shadow: 0 0 3px cyan;
 }

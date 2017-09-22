@@ -8,23 +8,25 @@
 <section>
 	<p>Membership expires on @Session["renew"]</p>
 	
-	<div class="row">
+	<div class="row" id="librow">
 
 
             <p>@Html.ActionLink("Display Your Game Library", "DisplayLibraryGames", "MemberPage", new { email = Session["email"] }, null)</p>
 
-            @if (Model != null)
+            <div id="librarygames">
+                @if (Model != null)
             {
 
                 foreach (var game in Model)
 
                 {
-                    <div class="col-sm-3">
-                        @*<img src="~/Content/Images/@game.GameImage" alt="@game.Title" />*@
-                        <p class="librarygame"> @game.Title</p>
-                    </div>
+                        <div class="col-sm-3">
+                            @*<img src="~/Content/Images/@game.GameImage" alt="@game.Title" />*@
+                            <p class="libraryitem"> @game.Title</p>
+                        </div>
+                    }
                 }
-            }
+            </div>
 
             @using (Ajax.BeginForm("SearchMember", "MemberPage",
             new AjaxOptions
@@ -39,9 +41,7 @@
                 @*<input type="submit" value="Search" />*@
             }
 
-            <span id="friends"></span>
-
-
+                <span id="friends"></span>
 		
 			</div>
 
