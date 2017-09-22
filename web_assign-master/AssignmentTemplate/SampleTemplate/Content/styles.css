@@ -299,3 +299,30 @@ select {
     color: black;
     width: 200px;
 }
+
+
+
+/*__________Account formatting___________*/
+
+#searchusers{
+    width:80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.librarydiv{
+    background-color:dimgrey;
+    text-align: center;
+    border-radius:5px;
+    padding: 5px;
+    margin: 5%;
+}
+
+.librarygame{
+    background-color:steelblue;
+    text-align:center;
+    padding:5px;
+    border-radius:5px;
+    box-shadow:0 0 5px 5px black;
+    color:black;
+}
