@@ -6,6 +6,7 @@
 <h2>Games available for download</h2>
 <section>
     <div class="row">
+
         @foreach (var game in Model)
 
         {
@@ -15,11 +16,14 @@
                 <p> Publisher: @game.Publisher</p>
                 @*<p> Developed by: @game.Developer</p>*@
                 <p> Genre: @game.Genre</p>
-		<p>
-             @Html.ActionLink("Add to Library", "AddToLibrary", "MemberPage", new { email = Session["email"], gamename = game.Title }, null) 
-
-		</p>                 
-            </div>}
+		        @if (Session["name"] != null)
+                {
+                    <p>
+                        @Html.ActionLink("Add to Library", "AddToLibrary", "MemberPage", new { email = Session["email"], gamename = game.Title }, null)
+		            </p> 
+                }
+            </div>
+        }
     </div>
 </section>
 
