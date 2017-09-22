@@ -13,7 +13,7 @@
                 <img src="~/Content/Images/@game.GameImage" alt="@game.Title" />
                 <p> @game.Title</p>
                 <p> Publisher: @game.Publisher</p>
-                <p> Developed by: @game.Developer</p>
+                @*<p> Developed by: @game.Developer</p>*@
                 <p> Genre: @game.Genre</p>
 		<p>
              @Html.ActionLink("Add to Library", "AddToLibrary", "MemberPage", new { email = Session["email"], gamename = game.Title }, null) 

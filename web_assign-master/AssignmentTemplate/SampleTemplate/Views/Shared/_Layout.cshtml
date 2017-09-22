@@ -60,8 +60,8 @@
 					<li>@Html.ActionLink("Contact Us", "Index", "Contact")</li>
 					@if (Session["name"] == null)
 					{
-					<li>@Html.ActionLink("Log In", "Index", "SignIn")</li>
-					<li>@Html.ActionLink("Register", "Index", "Register")</li>
+					@*<li>@Html.ActionLink("Log In", "Index", "SignIn")</li>
+					<li>@Html.ActionLink("Register", "Index", "Register")</li>*@
 					}
 					@if (Session["name"] != null)
 					{
@@ -76,8 +76,8 @@
 				@*<form class="form-inline">*@
 					@using (Html.BeginForm("Search", "Games", new {@class ="form-inline"}))
 					{
-						<input type="text" name="Search" placeholder="Search Games"/>
-							<input type="submit" value="Search" />
+						<input type="text" name="Search" id="search" placeholder="Search Games"/>
+							@*<input type="submit" value="Search" />*@
 					}
 
 				@*</form>*@
@@ -120,7 +120,7 @@
 						<div class="col-md-3">
 							<ul>
 								<li><a href="#">Terms of Service</a></li>
-								<li><a href="#">&copy; Force Gaming</a></li>
+								<li>&copy; Force Gaming</li>
 							</ul>
 						</div>
 					</div>

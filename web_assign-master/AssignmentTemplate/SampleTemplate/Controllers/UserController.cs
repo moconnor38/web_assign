@@ -28,12 +28,13 @@ namespace SampleTemplate.Controllers
                 if (count == 1)
                 {
                     ViewBag.Status = "Member successfully created.";
+                    return RedirectToAction("Index", "Home");
                 }
                 else
                 {
                     ViewBag.Status = "Error! " + dao.message;
                 }
-                return View("Status");
+                return RedirectToAction("Index", "Home");
             }
             return View(user);
         }
